@@ -28,8 +28,8 @@ sudo yum repolist
 # Install additional helper packages
 sudo yum -y install htop
 sudo yum -y install screen
-
-##
+sudo yum -y install libcurl-devel
+sudo yum -y install libxml2-devel
 
 # Install R
 wget http://mirror.centos.org/centos/7/os/x86_64/Packages/texlive-epsf-doc-svn21461.2.7.4-38.el7.noarch.rpm
@@ -38,8 +38,11 @@ wget http://mirror.centos.org/centos/7/os/x86_64/Packages/texinfo-tex-5.1-4.el7.
 sudo yum localinstall -y texlive-epsf-doc-svn21461.2.7.4-38.el7.noarch.rpm
 sudo yum localinstall -y texlive-epsf-svn21461.2.7.4-38.el7.noarch.rpm
 sudo yum localinstall -y texinfo-tex-5.1-4.el7.x86_64.rpm
-
 sudo yum install -y R
+
+# Install R Packages
+# Install packages as sudo / wheel
+
 
 # Python
 sudo yum install gcc openssl-devel bzip2-devel
@@ -66,4 +69,5 @@ emacs /home/ec2-user/.jupyter/jupyter_notebook_config.py
 
 # Firewall
 sudo firewall-cmd --permanent --zone=public --add-port=8787/tcp
+sudo firewall-cmd --permanent --zone=public --add-port=8888/tcp
 sudo firewall-cmd --reload
