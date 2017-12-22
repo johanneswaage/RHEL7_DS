@@ -29,6 +29,8 @@ sudo yum repolist
 sudo yum -y install htop
 sudo yum -y install screen
 
+##
+
 # Install R
 wget http://mirror.centos.org/centos/7/os/x86_64/Packages/texlive-epsf-doc-svn21461.2.7.4-38.el7.noarch.rpm
 wget http://mirror.centos.org/centos/7/os/x86_64/Packages/texlive-epsf-svn21461.2.7.4-38.el7.noarch.rpm
