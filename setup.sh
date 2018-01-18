@@ -5,15 +5,15 @@
 
 
 # Create user
-sudo useradd jwaage
-sudo passwd jwaage
-sudo usermod -aG wheel jwaage
+sudo useradd ***
+sudo passwd ***
+sudo usermod -aG wheel ***
 
-sudo useradd mac
-sudo passwd mac
+sudo useradd ***
+sudo passwd ***
 
-sudo useradd emd
-sudo passwd emd
+sudo useradd ***
+sudo passwd ***
 
 
 # Install helper packages
