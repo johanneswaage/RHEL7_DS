@@ -67,6 +67,10 @@ emacs /home/ec2-user/.jupyter/jupyter_notebook_config.py
 # Start jupyter
 /opt/anaconda/bin/jupyter notebook --ip 172.31.20.152 --port 8888 --notebook-dir ~
 
+# RStudio Connect
+wget https://s3.amazonaws.com/rstudio-connect/centos6.3/x86_64/rstudio-connect-1.5.12-7.x86_64.rpm
+sudo yum install --nogpgcheck rstudio-connect-1.5.12-7.x86_64.rpm
+
 # Firewall
 sudo firewall-cmd --permanent --zone=public --add-port=8787/tcp
 sudo firewall-cmd --permanent --zone=public --add-port=8888/tcp
