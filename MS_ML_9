@@ -30,3 +30,17 @@ cd /opt/microsoft/mlserver/9.2.1/o16n
 # Compute node: http://localhost:12805/status
 # Web node: http://localhost:12800/
 # Rserve port: 9054
+
+# Do remote login
+
+Revo64
+
+library(mrsconnect)
+remoteLogin(
+          https://YourHostEndpoint, 
+          session = TRUE, 
+          diff = TRUE,
+          commandline = TRUE
+          username = NULL,
+          password = NULL,
+  )
