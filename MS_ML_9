@@ -24,7 +24,7 @@ cd /opt/microsoft/mlserver/9.2.1/o16n
 
 /usr/local/bin/dotnet Microsoft.MLServer.Utils.AdminUtil/Microsoft.MLServer.Utils.AdminUtil.dll
 
-#2) set local admin password to Epistola2!
+#2) set local admin password to [mailbotnavn]2!
 #1) Configure server  -> One-box
 
 # Compute node: http://localhost:12805/status
